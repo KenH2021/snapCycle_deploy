@@ -11,6 +11,10 @@
   src: url("../font/Poppins-Bold.ttf") format("truetype");
 }
 @font-face {
+    font-family: "Poppins-SemiBold";
+    src: url("../font/Poppins-SemiBold.ttf") format("truetype");
+  }
+@font-face {
     font-family: 'Arial Rounded MT';
     src: url('../font/Arial_Rounded_MT.ttf') format("truetype");
 }
@@ -28,6 +32,11 @@ a, a:hover, a:focus, a:active {
     color: white;
 }
 
+.text-sc{
+    font-size: 25;
+    color: #005A70;
+    font-family: "Poppins-SemiBold", "Times New Roman", sans-serif;
+}
 
 .ft-beta-1 {
   font-size: 20;
