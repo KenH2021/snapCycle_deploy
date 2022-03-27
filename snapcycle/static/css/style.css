@@ -1,21 +1,33 @@
+@font-face {
+  font-family: "Kollektif";
+  src: url("../font/Kollektif.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Sacramento-Regular";
+  src: url("../font/Sacramento-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Poppins-Bold";
+  src: url("../font/Poppins-Bold.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Poppins-SemiBold";
+  src: url("../font/Poppins-SemiBold.ttf") format("truetype");
+}
 
-@font-face {
-    font-family: 'Kollektif';
-    src: url('../font/Kollektif.ttf') format("truetype");
-}
-@font-face {
-    font-family: 'Sacramento-Regular';
-    src: url('../font/Sacramento-Regular.ttf') format("truetype");
-}
 .nav-link {
-    color: #005A70!important;
-    font-size: 20;
-    font-weight: bold;
-    font-family:'Arial Rounded MT', Arial, sans-serif;
-
+  color: #005a70 !important;
+  font-size: 20;
+  font-weight: bold;
+  font-family: "Arial Rounded MT", Arial, sans-serif;
 }
 
-.beta{
-    font-size: 20;
-    font-family:'Kollektif', 'Times New Roman', sans-serif;
+.beta {
+  font-size: 20;
+  font-family: "Kollektif", "Times New Roman", sans-serif;
+}
+
+.ft-beta-1 {
+  font-size: 20;
+  font-family: "Sacramento-Regular", "Times New Roman", sans-serif;
 }

@@ -19,20 +19,6 @@
     <title>Snapcycle</title>
   </head>
   <body id="bg-image">
-    <!-- <table style="height: 75vh; width: 100%;">
-        <tbody>
-          <tr>
-            <td class="align-middle ">
-                <div class="d-flex justify-content-center text-center align-self-center">
-                    <h1> Acceder Ã  la version Beta </h1>
-                </div>
-                <div class="d-flex justify-content-center text-center">
-                    <h1> Donne ton e-mail frere </h1>
-                </div>
-            </td>
-          </tr>
-        </tbody>
-      </table> -->
     <div>
       <div class="row" style ="height: 100vh; width: 100%">
         <div class="col">
@@ -40,27 +26,27 @@
             <tbody>
               <tr>
                 <td class="align-top">
-                  <div class="d-flex justify-content-center text-center">
-                    <h6>
-                      Votre Application qui vous dit Quoi Comment et Où Recycler
-                    </h6>
+                  <div class="justify-content-center">
+
+                    <blockquote class="blockquote">
+                      <p class="mb-0 pl-2 text-success">Votre Application qui vous dit</p>
+                      <p class="mb-0 pl-2 text-success">Quoi Comment et Où</p>
+                      <p class="mb-0 pl-2 text-success">Recycler</p>
+                    </blockquote>
                   </div>
                 </td>
               </tr>
               <tr>
                 <td class="align-content-center">
                   <div class="d-flex justify-content-center text-center">
-                    <!-- <img src="{% static "/accueil/Personnage.png" %}" alt="background image"/> -->
-                    <h1>Image</h1>
-                    <!-- <img src="{% static "/beta/MockUp.png" %}" alt="MockUp image"/> -->
+                    <img src="{% static "/beta/MockUp.png" %}" alt="MockUp image" width="80%" height="80%" />
                   </div>
                 </td>
               </tr>
               <tr>
                 <td class="align-bottom">
                   <div class="d-flex justify-content-center text-center">
-                    <!-- <img src="{% static "/accueil/Personnage.png" %}" alt="background image"/> -->
-                    <h1>Bientot disponible</h1>
+                    <h1 class="display-4 text-success">Bientot disponible</h1>
                   </div>
                 </td>
               </tr>
@@ -72,24 +58,21 @@
           <table style="height: 100vh; width: 100%">
             <tbody>
               <tr>
-                <td class="align-top">
+                <td class="align-content-center">
                   <div class="d-flex justify-content-center text-center">
-                    <h2>Accéder à la version Beta</h2>
+                    <h1 class="display-4 text-white font-weight-bold">Accéder à la version Beta</h1>
                   </div>
                 </td>
               </tr>
               <tr>
-                <td class="align-content-center">
-                  <div class="d-flex justify-content-center text-center">
-                    <!-- <img src="{% static "/accueil/Personnage.png" %}" alt="background image"/> -->
-                    <div class="d-flex justify-content-center text-center">
-                      <h5>
+                <td class="align-top">
+                  <div>
+                      <h4 class="text-white p-lg-3">
                         Entrer votre adresse courrier ci-dessous et recevez
                         votre invitation
-                      </h5>
-                    </div>
+                      </h4>
                   </div>
-                  <form>
+                  <form class="py-3">
                     <div class="form-group align-content-center">
                       <div class="col-5">
                       </div>
@@ -97,21 +80,20 @@
                         <input type="email" class="form-control form-control-lg" id="email" placeholder="Adresse courriel">
                       </div>
                     </div>
-                    <button type="submit" class="btn btn-primary">Submit</button>
+                    <div class="d-flex justify-content-center text-center pt-4">
+                      <input type="image" src="{% static "/beta/BtnRegister.png" %}" name="submit" alt="submit" width="50%" height="60%"/>  
+                    </div>
                   </form>
                   <div class="d-flex justify-content-center text-center">
-                    <img src="{% static "/beta/BtnRegister.png" %}" alt="BtnRegister image"/>
-                  </div>
-                  <div class="d-flex justify-content-center text-center">
-                    <h5>--- 100% Sécurisé ---</h5>
-                  </div>
+                    <img src="{% static "/beta/Securiser.png" %}" alt="Securiser image" width="30%" height="30%" />
+                  </div> 
                 </td>
               </tr>
               <tr>
-                <td class="align-bottom">
+                <td class="align-content-center pb-2">
                   <div class="d-flex justify-content-around text-center">
-                    <img src="{% static "/beta/Appstore.png" %}" alt="Appstore image"/>
-                    <img src="{% static "/beta/Playstore.png" %}" alt="Playstore image"/>
+                    <img src="{% static "/beta/Playstore.png" %}" alt="Playstore image" width="25%" height="25%" />
+                    <img src="{% static "/beta/Appstore.png" %}" alt="Appstore image" width="25%" height="25%"/>
                   </div>
                 </td>
               </tr>
@@ -131,15 +113,16 @@
     }
 
     #bg-image {
-
-      background-image:url('{% static "/beta/betaRightBG.png" %}');
-
-      
+      background-image:url('{% static "/beta/betaRightBG.png" %}');      
       background-size: 60%;
-  
       background-position: center right;
-  
       background-repeat: no-repeat; 
+    }
+
+    blockquote {
+    text-align: center; 
+    margin:0 auto;
+    width:auto;
 }
 
   </style>
