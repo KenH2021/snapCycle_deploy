@@ -7,14 +7,20 @@
     font-family: 'Sacramento-Regular';
     src: url('../font/Sacramento-Regular.ttf') format("truetype");
 }
+@font-face {
+    font-family: 'Arial Rounded MT';
+    src: url('../font/Arial_Rounded_MT.ttf') format("truetype");
+}
 .nav-link {
     color: #005A70!important;
     font-size: 20;
-    font-weight: bold;
-    font-family:'Arial Rounded MT', Arial, sans-serif;
+    font-family:'Arial Rounded MT', Arial,sans-serif;
 
 }
-
+a, a:hover, a:focus, a:active {
+    text-decoration: none;
+    color: white;
+}
 .beta{
     font-size: 20;
     font-family:'Kollektif', 'Times New Roman', sans-serif;
