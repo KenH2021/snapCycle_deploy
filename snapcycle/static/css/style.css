@@ -1,10 +1,21 @@
-@font-face {
-    font-family: Jaldi;
-    src: local('font/Jaldi');
-  }
-.nav-link {
-    color: rgb(25, 88, 88)!important;
-    font-weight: bold;
-    font-family:'Jaldi', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 
+@font-face {
+    font-family: 'Kollektif';
+    src: url('../font/Kollektif.ttf') format("truetype");
+}
+@font-face {
+    font-family: 'Sacramento-Regular';
+    src: url('../font/Sacramento-Regular.ttf') format("truetype");
+}
+.nav-link {
+    color: #005A70!important;
+    font-size: 20;
+    font-weight: bold;
+    font-family:'Arial Rounded MT', Arial, sans-serif;
+
+}
+
+.beta{
+    font-size: 20;
+    font-family:'Kollektif', 'Times New Roman', sans-serif;
 }
