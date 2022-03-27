@@ -1,0 +1,10 @@
+@font-face {
+    font-family: Jaldi;
+    src: local('font/Jaldi');
+  }
+.nav-link {
+    color: rgb(25, 88, 88)!important;
+    font-weight: bold;
+    font-family:'Jaldi', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+}
