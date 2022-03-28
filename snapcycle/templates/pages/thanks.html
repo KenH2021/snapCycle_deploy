@@ -1,0 +1,55 @@
+{% load static %}
+<style type="text/css">
+  body { 
+   background: url('{% static "accueil/fond_image.png" %}') no-repeat center center fixed; 
+   -webkit-background-size: cover;
+   -moz-background-size: cover;
+   -o-background-size: cover;
+   background-size: cover;
+  }
+</style>
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <!-- <link rel="stylesheet"  href="{%  static  'css/bootstrap.css'  %}"> -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="{% static '/css/style.css'  %}">
+
+    <script defer src="/node_modules/swup/dist/swup.min.js"></script>
+    <script defer src="script.js"></script>
+
+    <title> Snapcycle </title>
+  </head>
+  <body id="swup" class = 'transition-slideup'>
+      <table style="height: 75vh; width: 100%;">
+        <tbody>
+          <tr>
+            <td class="align-middle ">
+                <div class="d-flex justify-content-center text-center align-self-center">
+                  <h1 class="thank-header text-success py-2 pt-5">Merci Beaucoup !</h1>
+                </div>
+                <div class="container d-flex justify-content-center text-center text-sc py-4">
+                  <p class="text-dark">Nous vous contacterons par e-mail d'ici 24H.</p>  
+                </div>
+                <div class="container d-flex justify-content-center text-center text-sc pt-5">
+                  <a href="/contact">  
+                    <image src="{% static "/contact/Contact.png" %}" name="submit" alt="submit" value="Submit" width="100%" height="100%">
+                  </a>
+                </div>
+
+            </td>
+          </tr>
+        </tbody>
+      </table>
+
+    <!-- Bootstrap JS -->
+    <script src="{%  static  'js/bootstrap.bundle.js'  %}" async defer></script>
+  </body>
+</html>
+
+

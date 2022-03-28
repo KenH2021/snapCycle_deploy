@@ -1,6 +1,8 @@
-from django.shortcuts import render
+from django.shortcuts import render, redirect
 from django.http import HttpResponseRedirect
+from django.core.mail import send_mail, BadHeaderError
 from .forms import EmailForm
+from django.http import HttpResponse
 
 
 # Create your views here.
@@ -14,30 +16,34 @@ def propos(request):
     return render(request, 'pages/propos.html')
 
 
+def contact(request):
+    return render(request, 'pages/contact.html')
+
+
+def mission(request):
+    return render(request, 'pages/mission.html')
+
+
+def thanks(request):
+    return render(request, 'pages/thanks.html')
+
+
 def beta(request):
-    context = {}
-    context['form'] = EmailForm()
-    return render(request, 'pages/beta.html', context)
-
-
-def email(request):  # a delete/modifier ...
-    return render(request, 'pages/propos.html')
-
-
-def get_email(request):
-    # if this is a POST request we need to process the form data
     if request.method == 'POST':
-        # create a form instance and populate it with data from the request:
         form = EmailForm(request.POST)
-        # check whether it's valid:
+        print
         if form.is_valid():
-            # process the data in form.cleaned_data as required
-            # ...
-            # redirect to a new URL:
-            return HttpResponseRedirect('/thanks/')
-
-    # if a GET (or any other method) we'll create a blank form
-    else:
-        form = EmailForm()
-
-    return render(request, 'pages/beta.html', {'form': form})
+            subject = "New client email"
+            body = {
+                'title': "email",
+                'email': form.cleaned_data['email_address'],
+            }
+            message = "\n".join(body.values())
+            try:
+                send_mail(subject, message, 'elwinmevo@gmail.com',
+                          ['elwinmevopro@gmail.com'])
+            except BadHeaderError:
+                return HttpResponse('Invalid header found.')
+            return redirect("/thanks")
+    form = EmailForm()
+    return render(request, "pages/beta.html", {'form': form})

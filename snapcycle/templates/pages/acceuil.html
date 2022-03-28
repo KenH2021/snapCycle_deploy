@@ -24,39 +24,39 @@
     <script defer src="/node_modules/swup/dist/swup.min.js"></script>
     <script defer src="script.js"></script>
 
-    <title>Hello, world!</title>
+    <title>SnapCycle</title>
   </head >
   <body >
   
     <!-- DEBUT NAV BAR -->
-    <nav class="navbar navbar-expand-lg navbar-light " style="height: 10vh;">
-        <a class="navbar-brand" href=""> 
+    <nav class="navbar navbar-expand-lg navbar-light " style="height: 15vh;">
+        <a class="navbar-brand pt-4" href=""> 
             <img src="{% static '/accueil/snapcycle_logo.png'  %}" alt="SnapCycle Logo"/>
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
-            <ul class="navbar-nav ">
+            <ul class="navbar-nav">
         
             <li class="nav-item active">
-                <a  class="nav-link " href="">ACCEUIL</a>
+                <a  class="nav-link " href="/acceuil">ACCEUIL</a>
             </li>
             <li class="nav-item active ">
                 <a class="nav-link" href="/propos" onclick="">À PROPOS</a>
             </li>
             <li class="nav-item active">
-                <a class="nav-link nav-bar" href="#">MISSION</a>
+                <a class="nav-link nav-bar" href="/mission">MISSION</a>
             </li>
             <li class="nav-item active">
-                <a  class="nav-link nav-bar" href="#">CONTACT</a>
+                <a  class="nav-link nav-bar" href="/contact">CONTACT</a>
             </li>
             </ul>
         </div>
     </nav>
       <!-- FIN NAV BAR -->
 
-      <table style="height: 75vh; width: 100%;">
+      <table style="height: 40vh; width: 100%;">
         <tbody>
           <tr>
             <td class="align-middle ">
@@ -75,20 +75,22 @@
 
 
       <!-- Footer -->
-    <footer class="page-footer font-small" style="height: 15vh;">
-        <div class="container-fluid p-0" >
+    <footer class="page-footer" style="height: 15vh;">
+        
+        <div class="container-fluid" >
             <div class="row d-flex justify-content-between">
-                <div class="d-flex flex-row">
-                    <h5 class="p-4"> 
+                <div class="d-flex flex-row" >
+                    <h5 class="p-4 mg-4"> 
                          </h5>
                          <img src="{% static '/accueil/personnage.png'  %}" alt="personnage"/>
-                    <a class="p-4 mt-auto beta" href="/beta"> Version Beta Snapcyle  </a> 
+                    <a class="p-4 mt-auto beta" href="/beta"> Version Beta Snapcyle  </a>
+                    
                 </div>
                 
                 <div class="d-flex flex-row">
-                    <h5 class="p-4  mt-auto img-fluid"> <img src="{% static '/accueil/icon-feather-linkedin.png'  %}"  alt="linkedin"/> </h5>
-                    <h5 class="p-4  mt-auto img-fluid"> <img src="{% static '/accueil/icon-awesome-instagram.png'  %}" alt="instagram"/> </h5>
-                    <h5 class="p-4  mt-auto img-fluid"> <img src="{% static '/accueil/icon-awesome-facebook-square.png'  %}" alt="facebook"/></h5>
+                    <h5 class="p-4 mb-0 mt-auto img-fluid"> <img src="{% static '/accueil/icon-feather-linkedin.png'  %}"  alt="linkedin"/> </h5>
+                    <h5 class="p-4 mb-0 mt-auto img-fluid"> <img src="{% static '/accueil/icon-awesome-instagram.png'  %}" alt="instagram"/> </h5>
+                    <h5 class="p-4 mb-0 mt-auto img-fluid"> <img src="{% static '/accueil/icon-awesome-facebook-square.png'  %}" alt="facebook"/></h5>
                 </div>
             </div>`
         </div>
