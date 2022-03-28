@@ -15,12 +15,14 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from snapcycle.views import acceuil, propos, beta
+from snapcycle.views import acceuil, propos, beta, email
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', acceuil),
     path('propos/', propos),
     path('beta/', beta),
+    path('email/', propos),
+
 
 ]
