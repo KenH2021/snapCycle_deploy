@@ -42,3 +42,13 @@ a, a:hover, a:focus, a:active {
   font-size: 20;
   font-family: "Sacramento-Regular", "Times New Roman", sans-serif;
 }
+
+.transition-slide-up{
+    opacity:1;
+    transition: 500ms;
+    
+}
+
+html.is-animating .transition-fade {
+    opacity: 0;
+  }
