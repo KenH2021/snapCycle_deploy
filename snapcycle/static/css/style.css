@@ -19,7 +19,6 @@
   src: url("../font/Arial_Rounded_MT.ttf") format("truetype");
 }
 .nav-link {
-<<<<<<< Updated upstream
   color: #005a70 !important;
   font-size: 20;
   font-family: "Arial Rounded MT", Arial, sans-serif;
@@ -80,15 +79,3 @@ a:active {
 html.is-animating .transition-fade {
   opacity: 0;
 }
-=======
-    color: rgb(25, 88, 88)!important;
-    font-weight: bold;
-    font-family:'Jaldi', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-}
-
-@font-face {
-  font-family: 'Sacramento-Regular';
-  src: local('Sacramento-Regular'),
-       url('../static/fonts/Sacramento-Regular/abc.ttf') format("truetype");
-}
->>>>>>> Stashed changes
