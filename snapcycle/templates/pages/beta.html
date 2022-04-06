@@ -4,10 +4,10 @@
   <head>
     <!-- Required meta tags -->
     <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1.0, shrink-to-fit=no"  
-    />
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="HandheldFriendly" content="true">
+
     
 
     <!-- Bootstrap CSS -->
@@ -19,16 +19,14 @@
     <link rel="stylesheet" href="{% static '/css/style.css'  %}">
 
 
-    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <meta name="HandheldFriendly" content="true">
 
     <title>Snapcycle</title>
   </head>
   <body>
-    <div id="container">
-      <div id="left">
-        <table style="height: 100vh;">
+    <div  id="container">
+
+      <div id="left" class="col-md-12 col-sm-6">
+        <table style="height: 100%;">
           <tbody>
             <tr>
               <td class="align-top">
@@ -45,7 +43,7 @@
             <tr>
               <td class="align-content-center">
                 <div class="d-flex justify-content-center text-center">
-                  <img src="{% static "/beta/MockUp.png" %}" alt="MockUp image" width="80%" height="80%" />
+                  <img src="{% static "/beta/MockUp.png" %}" alt="MockUp image" style="max-width: 80%; height: 80%;" />
                 </div>
               </td>
             </tr>
@@ -60,7 +58,7 @@
         </table>
       </div>
 
-      <div id="right">
+      <div id="right" class="col-md-12 col-sm-6" >
         <div class="child">
           <table style="height: 100vh;">
             <tbody>
@@ -82,9 +80,9 @@
 
                   <form class="py-3" method="post">
                     {% csrf_token %}    
-                    <div class="form-group align-content-center">
+                    <div class="form-group align-content-center container">
                       
-                      <div class="d-flex justify-content-center text-center" style="max-width: 100%; position: relative;">
+                      <div class="d-flex justify-content-center text-center pt-4 ">
                         {{form.as_p}}
                       </div>
                     </div>
@@ -100,8 +98,8 @@
               <tr>
                 <td class="align-content-center pb-4">
                   <div class="d-flex justify-content-around text-center">
-                    <img src="{% static "/beta/Playstore.png" %}" alt="Playstore image" style="max-width: 25%; height: 25%;" />
-                    <img src="{% static "/beta/Appstore.png" %}" alt="Appstore image" style="max-width: 25%; height: 25%;" />
+                    <img src="{% static "/beta/Playstore.png" %}" alt="Playstore image" style="max-width: 25%; height: auto;" />
+                    <img src="{% static "/beta/Appstore.png" %}" alt="Appstore image" style="max-width: 25%; height: auto;" />
                   </div>
                 </td>
               </tr>
