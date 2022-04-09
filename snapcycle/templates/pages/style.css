@@ -68,3 +68,11 @@ a:active {
   font-family: "Poppins-SemiBold", "Times New Roman", sans-serif;
 }
 
+.transition-slide-up {
+  opacity: 1;
+  transition: 500ms;
+}
+
+html.is-animating .transition-fade {
+  opacity: 0;
+}

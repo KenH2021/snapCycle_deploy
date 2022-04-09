@@ -35,12 +35,12 @@ def beta(request):
         if form.is_valid():
             subject = "New client email"
             body = {
-                'title': "email",
+                'title': "New email: ",
                 'email': form.cleaned_data['email_address'],
             }
             message = "\n".join(body.values())
             try:
-                send_mail(subject, message, 'elwinmevo@gmail.com',
+                send_mail(subject, message, 'elwinmevopro@gmail.com',
                           ['elwinmevopro@gmail.com'])
             except BadHeaderError:
                 return HttpResponse('Invalid header found.')
