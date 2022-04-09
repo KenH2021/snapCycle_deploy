@@ -19,7 +19,6 @@
   src: url("../font/Arial_Rounded_MT.ttf") format("truetype");
 }
 .nav-link {
-<<<<<<< Updated upstream
   color: #005a70 !important;
   font-size: 20;
   font-family: "Arial Rounded MT", Arial, sans-serif;
@@ -72,23 +71,13 @@ a:active {
   font-family: "Poppins-SemiBold", "Times New Roman", sans-serif;
 }
 
-.transition-slide-up {
+.transition-slideup {
   opacity: 1;
-  transition: 500ms;
+  transition: .4s;
 }
 
-html.is-animating .transition-fade {
+html.is-animating .transition-slideup {
   opacity: 0;
-}
-=======
-    color: rgb(25, 88, 88)!important;
-    font-weight: bold;
-    font-family:'Jaldi', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  transform: translateX(-100px);
 }
 
-@font-face {
-  font-family: 'Sacramento-Regular';
-  src: local('Sacramento-Regular'),
-       url('../static/fonts/Sacramento-Regular/abc.ttf') format("truetype");
-}
->>>>>>> Stashed changes
