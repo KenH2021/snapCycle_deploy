@@ -15,6 +15,10 @@
   src: url("../font/Poppins-SemiBold.ttf") format("truetype");
 }
 @font-face {
+  font-family: "Poppins-Regular";
+  src: url("../font/Poppins-Regular.ttf") format("truetype");
+}
+@font-face {
   font-family: "Arial Rounded MT";
   src: url("../font/Arial_Rounded_MT.ttf") format("truetype");
 }
@@ -68,3 +72,8 @@ a:active {
   font-family: "Poppins-SemiBold", "Times New Roman", sans-serif;
 }
 
+.text-contact {
+  font-size: 10;
+  color: white;
+  font-family: "Poppins-Regular", "Times New Roman", sans-serif;
+}

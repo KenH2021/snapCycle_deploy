@@ -18,7 +18,6 @@ from django.urls import path
 from snapcycle.views import acceuil, contact, mission, propos, beta, thanks
 
 urlpatterns = [
-    path('/', acceuil),
     path('admin/', admin.site.urls),
     path('acceuil/', acceuil),
     path('propos/', propos),

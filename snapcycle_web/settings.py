@@ -17,10 +17,9 @@ import os
 BASE_DIR = Path(__file__).resolve().parent.parent
 
 
-STATIC_URL = 'static/'
-STATIC_ROOT = os.path.join(BASE_DIR,  'static')
-
-
+STATIC_URL = 'snapcycle/static/'
+STATIC_ROOT = os.path.join(BASE_DIR,  'snapcycle/static')
+print('HERE',STATIC_ROOT)
 
 
 # Quick-start development settings - unsuitable for production
@@ -62,7 +61,7 @@ ROOT_URLCONF = 'snapcycle_web.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [os.path.join(BASE_DIR,'templates/pages')],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -123,7 +122,7 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/4.0/howto/static-files/
 
-STATIC_URL = 'static/'
+
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.0/ref/settings/#default-auto-field
