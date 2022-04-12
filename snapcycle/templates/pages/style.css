@@ -18,6 +18,7 @@
   font-family: "Arial Rounded MT";
   src: url("../font/Arial_Rounded_MT.ttf") format("truetype");
 }
+
 .nav-link {
   color: #005a70 !important;
   font-size: 20;
@@ -68,11 +69,6 @@ a:active {
   font-family: "Poppins-SemiBold", "Times New Roman", sans-serif;
 }
 
-.transition-slide-up {
-  opacity: 1;
-  transition: 500ms;
-}
-
-html.is-animating .transition-fade {
-  opacity: 0;
+body {
+  background-color: transparent !important;
 }
