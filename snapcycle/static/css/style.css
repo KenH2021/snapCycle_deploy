@@ -25,7 +25,7 @@
 .nav-link {
   color: #005a70 !important;
   font-size: 20;
-  font-family: "Arial Rounded MT", Arial, sans-serif;
+  font-family: "Poppins-SemiBold", Arial, sans-serif;
 }
 .beta {
   font-size: 20;
@@ -77,3 +77,5 @@ a:active {
   color: white;
   font-family: "Poppins-Regular", "Times New Roman", sans-serif;
 }
+
+
