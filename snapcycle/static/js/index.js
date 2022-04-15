@@ -18,11 +18,13 @@ window.onload =()=>{
             },500)
         })
     }*/
-    const btn = document.querySelector('.contactbtn');
-    const elems = document.querySelectorAll('.transition');
-    btn.addEventListener('click', e=>{
-        for(let i=0; i<elems.length;i++){
-        const elem= elems[i];
+    const contactbtn = document.querySelector('.contactbtn');
+    const proposbtn = document.querySelector('.proposbtn');
+    const elems2 = document.querySelectorAll('.transition-2');
+    const elems3 = document.querySelectorAll('.transition-3');
+    contactbtn.addEventListener('click', e=>{
+        for(let i=0; i<elems2.length;i++){
+        const elem= elems2[i];
             console.log('here')
             setTimeout(()=>{
                 elem.classList.toggle('is-active');
@@ -30,10 +32,32 @@ window.onload =()=>{
             
             }
         })
+
+    proposbtn.addEventListener('click', e=>{
+            for(let i=0; i<elems3.length;i++){
+            const elem= elems3[i];
+                console.log('here')
+                setTimeout(()=>{
+                    elem.classList.toggle('is-active');
+                },500)
+                
+                }
+            })
     const contactsection = document.querySelector('.contact');
     contactsection.addEventListener('click', e=>{
-        for(let i=0; i<elems.length;i++){
-            const elem= elems[i];
+        for(let i=0; i<elems2.length;i++){
+            const elem= elems2[i];
+                console.log('here')
+                setTimeout(()=>{
+                    elem.classList.toggle('is-active');
+                },500)
+                
+                }
+            })
+    const propossection = document.querySelector('.a-propos');
+    propossection.addEventListener('click', e=>{
+        for(let i=0; i<elems3.length;i++){
+            const elem= elems3[i];
                 console.log('here')
                 setTimeout(()=>{
                     elem.classList.toggle('is-active');
