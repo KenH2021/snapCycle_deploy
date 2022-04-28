@@ -10,54 +10,82 @@
     <!-- <link rel="stylesheet"  href="{%  static  'css/bootstrap.css'  %}"> -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="{% static '/css/style.css'  %}">
-
-    <script defer src="/node_modules/swup/dist/swup.min.js"></script>
-    <script defer src="script.js"></script>
+  
 
     <title> Snapcycle </title>
   </head>
-  <body id="swup" class = 'transition-slideup'>
-
-    <nav class="navbar navbar-expand-lg navbar-light " style="height: 15vh;">
-      <a class="navbar-brand pt-4" href=""> 
-          <img src="{% static '/accueil/snapcycle_logo.png'  %}" alt="SnapCycle Logo"/>
-      </a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
-          <ul class="navbar-nav ">
-      
-          <li class="nav-item active">
-              <a  class="nav-link " href="/acceuil">ACCEUIL</a>
-          </li>
-          <li class="nav-item active ">
-              <a class="nav-link" href="/propos" onclick="">À PROPOS</a>
-          </li>
-          <li class="nav-item active">
-              <a class="nav-link nav-bar" href="/mission">MISSION</a>
-          </li>
-          <li class="nav-item active">
-              <a  class="nav-link nav-bar" href="/contact">CONTACT</a>
-          </li>
-          </ul>
-      </div>
-  </nav>
-
-      <table style="height: 75vh; width: 100%;">
-        <tbody>
-          <tr>
-            <td class="align-middle ">
-                <div class="d-flex justify-content-center text-center align-self-center">
-                    <h1> Mission </h1>
+  <body >
+    
+      <div  class="jumbotron d-flex align-items-center  " style="height:100%" >
+          <div class="container" >
+            <div class="col-md-12 text-center ">
+              <h1 class="d-flex justify-content-center text-center align-self-center" > Mission </h1>
+            
+              <div class="row justify-content-around " >
+                <a href="/camera" class="text-box col text-center ml-1 mr-1"  >
+                    <h3 class="">Recycler</h3>
+                    <p  class=" text-center">Offrir au citoyen un outil qui le permettra d'éliminer l'inceritude
+                      sur la destinaiton des matières de son bac. Résumé le recyclage en un geste simple, rapide
+                      et fiable.</p>
+                      <div class="number text-right">1</div>
+                </a>
+            
+                <a href="/spool" class="text-box col text-center ml-1 mr-1"  >
+                    <h3 class="">Réutiliser</h3>
+                    <p  class=" text-center" >Pourquoi pas montrer que rien ne perd tout se transforme il suffit juste 
+                      un peu de créativié et d'éducation. Instruire les gens sur le comment rendre utile les objets
+                      du quotidien destinés su bac.
+                    </p>
+                    <div class="number text-right">2</div>
+                </a>
+                <a href="/carbo" class="text-box col text-center ml-1 mr-1"  >
+                  <h3 class="" >Réduire</h1>
+                    <p  class=" text-center">Inviter le citoyen à la reduction en lui offrant un outil précis qui calculera son bilan écologique
+                      et par la suite lui proposer des alternatives de consommation écoresponsables.
+                    </p>
+                    <div class="number text-right">3</div>
+                  </a>
+            </div>
+        </div>
+    </div>
+               <!-- <div class="d-flex justify-content-center text-center align-self-center row">
+                    <h1> Mission </h3>
                 </div>
-                <div class="d-flex justify-content-center text-center">
-                    <h1> En développement. </h1>
+                <div class="row justify-content-center text-center" style="height:100%" >
+                  <a href="" class="text-box col mx-5"  >
+                    <div class="h-90 mr-auto row align-items-end justify-content-end" >
+                      <h3 class="mt-4 d-flex container-fluid text-center h-90 d-inline-block justify-content-center">Recycler</h3>
+                      <p  class="mt-4 d-flex container-fluid text-center h-90 d-inline-block">Offrir au citoyen un outil qui le permettra d'éliminer l'inceritude
+                         sur la destinaiton des matières de son bac. Résumé le recyclage en un geste simple, rapide
+                        et fiable.</p>
+                        <div class="mt-auto number text-right font-weight-bold">1</div>
+                    </div>
+                  </a>
+                  <a href="/spool" class="col text-box mx-5 " >
+                    <div class="h-90  mr-auto row align-items-end justify-content-end" >
+                      <h3 class="mt-4 d-flex container-fluid text-center h-90 d-inline-block justify-content-center">Réutiliser</h3>
+                      <p  class="mt-4 d-flex container-fluid text-center h-90 d-inline-block" >Pourquoi pas montrer que rien ne perd tout se transforme il suffit juste 
+                        un peu de créativié et d'éducation. Instruire les gens sur le comment rendre utile les objets
+                        du quotidien destinés su bac.
+                      </p>
+                      <div class="mt-auto number text-right font-weight-bold">2</div>
+                    </div>
+                  </a>
+                  <a href="/spool" class=" col text-box mx-5" >
+                    <div class= "h-90 mr-auto row align-items-end justify-content-end" >
+                      <h3 class="mt-4 d-flex container-fluid text-center h-90 d-inline-block justify-content-center" >Réduire</h1>
+                      <p  class="mt-4 d-flex container-fluid text-center h-90 d-inline-block">Inviter le citoyen à la reduction en lui offrant un outil précis qui calculera son bilan écologique
+                        et par la suite lui proposer des alternatives de consommation écoresponsables.
+                      </p>
+                      <div class="mt-auto number text-right font-weight-bold">3</div>
+                    </div>
+                  </a>
                 </div>
             </td>
           </tr>
         </tbody>
       </table>
+    -->
 
 
 
@@ -68,11 +96,23 @@
 
 
 <style type="text/css">
+  html {
+    height:100%;
+  }
   body { 
    background: url('{% static "apropos/Blue_BackGround.png" %}') no-repeat center center fixed; 
    -webkit-background-size: cover;
    -moz-background-size: cover;
    -o-background-size: cover;
    background-size: cover;
+   height:100%;
+  }
+  .jumbotron{
+    background-color: unset;
+  }
+  @media (max-width: 576px){
+    .jumbotron {
+        align-items: unset!important;
+    }
   }
 </style>

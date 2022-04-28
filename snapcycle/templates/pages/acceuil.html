@@ -1,191 +1,228 @@
 {% load static %} 
 <style type="text/css">
-    html { 
-     background: url('{% static "accueil/fond_image.png" %}') no-repeat center center; 
-     height: auto;
-     -webkit-background-size: cover;
-     -moz-background-size: cover;
-     -o-background-size: cover;
-     background-size: cover;
+  html, .contact, .a-propos { 
+    background: url('{% static "accueil/BackGround_low.png" %}') no-repeat center center; 
+    height: 130%;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
     
-    }
-    body{
-        background-color: transparent!important;
-    }
+  }
+  body{
+    background-color: transparent!important;
+  }
   
-
+  
 </style>
 <!doctype html>
 <html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-    <!-- Bootstrap CSS -->
-   
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css">
-    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
-    <link rel="stylesheet" href="{% static '/css/transitions.css'  %}">
-    <link rel="stylesheet" href="{% static '/css/style.css'  %}">
-   
-    
-   
+<head>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css">
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width  maximum-scale=1.0  user-scalable=0;">
   
-
-    <title>SnapCycle</title>
-  </head >
-  <body >
+  <!-- Bootstrap CSS -->
+  
+  
+  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+  <link rel="stylesheet" href="{% static '/css/transitions.css'  %}">
+  <link rel="stylesheet" href="{% static '/css/style.css'  %}">
+  
+  
+  
+  
+  
+  <title>SnapCycle</title>
+</head >
+<body >
+  
+  <div  style="height: 100%;"class="transition transition-2 transition-3 is-active d-flex flex-column  " >
+    <!-- DEBUT NAV BAR -->
     
-    <div class="transition transition-2 transition-3 is-active d-flex flex-column " >
-      <!-- DEBUT NAV BAR -->
+    <nav class="navbar navbar-expand-lg navbar-light justify-content-between row h-10 " >
       
-    <nav class="navbar navbar-expand-lg navbar-light justify-content-between row " >
-
-    <div class="container-fluid">
-        <a class="navbar-brand pt-4" href=""> 
-            <img   src="{% static '/accueil/snapcycle_logo.png'  %}" class="img-fluid" alt="SnapCycle Logo"/>
-        </a>
+      <div class="container-fluid">
+        
+        <picture class="d-flex">
+          <img class="img-fluid"  src="{% static '/accueil/snapcycle_logo.png'  %}"  alt="SnapCycle Logo"/>
+        </picture>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
+          <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
-            <ul class="navbar-nav">
-        
+          <ul class="navbar-nav">
+            
             <li class="nav-item active" >
-                <a  class="nav-link " href="/acceuil">ACCEUIL</a>
+              <a  class="nav-link " href="/acceuil">ACCEUIL</a>
             </li>
             <li class="nav-item active ">
-                <a class="nav-link nav-bar proposbtn" >À PROPOS</a>
+              <a class="nav-link nav-bar proposbtn" >À PROPOS</a>
             </li>
             <li class="nav-item active">
-                <a class="nav-link nav-bar" href="/mission">MISSION</a>
+              <a class="nav-link nav-bar" href="/mission">MISSION</a>
             </li>
             <li class="nav-item active" >
-                <a  class="nav-link nav-bar contactbtn"  >CONTACT</a>
+              <a  class="nav-link nav-bar contactbtn"  >CONTACT</a>
             </li>
-            </ul>
+          </ul>
         </div></div>
-    </nav>
+      </nav>
       <!-- FIN NAV BAR -->
-    
-      <table class="flex-fill row" >
+      
+      <table class="flex-fill row  h-50" >
         <tbody class='col align-self-center'>
           <tr class='d-flex flex-column'>
             <td class="align-middle ">
-                <div class="d-flex justify-content-center text-center align-self-baseline">
-                    <img src="{% static '/accueil/message.png'  %}" class="img-fluid" alt="Notre site web reviens bientot avec un nouveaux concept
-                    " />
-                    
-                </div>
-                <div class="d-flex justify-content-center text-center">
-                    <h1> <img src="{% static '/accueil/loading.png'  %}" class="img-fluid" alt="loading"/> </h1>
-                </div>
+              <div class="d-flex justify-content-center text-center align-self-baseline">
+                <img src="{% static '/accueil/message.png'  %}" class="img-fluid" alt="Notre site web reviens bientot avec un nouveaux concept
+                " />
+                
+              </div>
+              <div class="d-flex justify-content-center text-center">
+                <h1> <img src="{% static '/accueil/loading.png'  %}" class="img-fluid" alt="loading"/> </h1>
+              </div>
             </td>
           </tr>
         </tbody>
       </table>
-   
-
-    
-
+      
+      
+      
+      
       <!-- Footer -->
-    <footer class="page-footer mt-auto row" >
+      <footer class="page-footer mt-auto row h-20" >
         
-        <div class="container-fluid " >
-            <div class="row d-flex justify-content-between">
-                <div class="d-flex flex-row" >
-                    <h5 class="p-4 mg-4"> 
-                         </h5>
-                         <img src="{% static '/accueil/personnage.png'  %}" class="img-fluid" alt="personnage"/>
-                    <a class="p-4 mt-auto beta" href="/beta"> Version Beta Snapcyle  </a>
-                    
-                </div>
-                
-                <div class="d-flex flex-row">
-                    <h5 class="p-4 mb-0 mt-auto img-fluid"> <img src="{% static '/accueil/icon-feather-linkedin.png'  %}"  class="img-fluid" alt="linkedin"/> </h5>
-                    <h5 class="p-4 mb-0 mt-auto img-fluid"> <img src="{% static '/accueil/icon-awesome-instagram.png'  %}"  class="img-fluid" alt="instagram"/> </h5>
-                    <h5 class="p-4 mb-0 mt-auto img-fluid"> <img src="{% static '/accueil/icon-awesome-facebook-square.png'  %}" class="img-fluid" alt="facebook"/></h5>
-                </div>
-            </div>`
-        </div>
-    </footer>
-  </div>
-
-  <div class="contact transition transition-2 ">
-  
-  
-    <table style="height: 75vh; width: 100%;">
-      <tbody >
-        <tr>
-          <td class="align-middle ">
-              <div class="d-flex justify-content-center text-center align-self-center ">
-                <img src="{% static '/contact/Contact.png'  %}" class="img-fluid" alt="arrow"  >
-              </div>
-              <div class="d-flex justify-content-center text-center mx-auto">
-               
-              <div class ='rounded-circle borders border border-white text-center mx-5 d-flex align-items-center flex-column' >
-                <img src="{% static '/contact/arrow.png'  %}" alt="arrow" class="img-fluid"  style="height: 12vh; margin-top:auto">
-                <p style="margin-bottom:auto"  class ='text-contact '> Québec, Canada </p>
+        <div class="container-fluid" >
+          <div class=" flex-nowrap d-flex justify-content-between">
+            <div class="d-flex flex-row" style="max-height:209px;">
+              <picture class="d-flex">
+                <img  src="{% static '/accueil/personnage.png' %}"  class="img-fluid" alt="personnage"/>
+              </picture>
+              <a class="p-4 mt-auto beta" href="/beta"> <div>Version Beta Snapcyle </div> </a>
+              
             </div>
-            <div class ='rounded-circle borders border border-white text-center mx-5 d-flex align-items-center flex-column' >
-              <img src="{% static '/contact/mail.png'  %}" alt="mail" class="img-fluid" style="height: 12vh; margin-top:auto" />
-              <p style="margin-bottom:auto"  class ='text-contact'> info@snapcycle.ca </p>
+            
+            <div class="d-flex flex-row">
+              <h5 class="p-4 mb-0 mt-auto "> 
+                <picture class="d-flex">
+                  <img  src="{% static '/accueil/icon-feather-linkedin.png' %}" class="img-fluid" alt="linkedin"/> 
+                </picture>
+              </h5>
+              <h5 class="p-4 mb-0 mt-auto ">
+                <picture class="d-flex">  <img  src="{% static '/accueil/icon-awesome-instagram.png' %}" class="img-fluid" alt="instagram"/> 
+                </picture>
+              </h5>
+              <h5 class="p-4 mb-0 mt-auto "> 
+                <picture class="d-flex"> 
+                  <img src="{% static '/accueil/icon-awesome-facebook-square.png' %}" class="img-fluid" alt="facebook"/>
+                </picture>
+              </h5>
+            </div>
+          </div>`
+        </div>
+      </footer>
+    </div>
+    
+    <div class=" overflow-auto contact transition transition-2 ">
+      
+      
+      <table class=" flex-fill row" style="height:90%" >
+        <tbody class='col align-self-center' >
+          <tr class='d-flex flex-column container'>
+            <td class="align-middle row justify-content-center" >
+              <div class=" container d-flex align-self-centerd-flex justify-content-center text-center ">
+                <h1 >Contact</h1>
               </div>
-            <div class ='rounded-circle borders border border-white text-center mx-5 d-flex align-items-center flex-column' >
-                <img src="{% static '/contact/phone.png'  %}" alt="phone"  class="img-fluid" style="height: 12vh; margin-top:auto" />
-                <p style="margin-bottom:auto "  class ='text-contact'> +1 581 922 5952 </p>
+              
+              <div class=" d-flex contact-b text-center align-items-center row">
+                <div class ='  col-sm-3  d-flex rounded-circle borders border border-white text-center  align-items-center flex-column' >
+                  <picture class="d-flex" style="margin-top:auto "> 
+                    <img src="{% static '/contact/arrow.png'  %}" alt="arrow" class="img-fluid"  style="max-height: 12vh; margin-top:auto mx-3">
+                  </picture>
+                  <p style="margin-bottom:auto"  class ='text-contact '> Québec, Canada </p>
+                </div>
+                <div class =' col-sm-3  d-flex rounded-circle borders border border-white text-center align-items-center flex-column' >
+                  <picture class="d-flex" style="margin-top:auto "> 
+                    <img src="{% static '/contact/mail.png'  %}" alt="mail" class="img-fluid" style="max-height: 12vh; margin-top:auto" />
+                  </picture>
+                  <p style="margin-bottom:auto"  class ='text-contact'> info@snapcycle.ca </p>
+                </div>
+                <div class ='col-sm-3  d-flex rounded-circle borders border border-white text-center  align-items-center flex-column' >
+                  <picture class="d-flex" style="margin-top:auto ">   
+                    <img src="{% static '/contact/phone.png'  %}" alt="phone"  class="img-fluid" style="max-height: 12vh" />
+                  </picture>
+                  <p style="margin-bottom:auto "  class ='text-contact'> +1 581 922 5952 </p>
+                </div>
               </div>
-              </div>
-          </td>
-        </tr>
-      </tbody>
-    </table>
-  </div>
-
-  <div class="a-propos transition transition-3">
-
-    <table style="height: 75vh; width: 100%;">
-      <tbody>
-        <tr>
-          <td class="align-top ">
-              <div class="d-flex justify-content-center text-center align-self-center">
-                  <h1><img src="{% static '/apropos/a_propos.png'  %}" alt="a propos"/></h1>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    
+    <div class="a-propos transition transition-3 d-flex flex-column">
+      
+      <table class="flex-fill row"  style="height:100%">
+        <tbody class='col align-self-center'>
+          <tr class='d-flex flex-column'>
+            <td class="align-middle ">
+              <div class="container d-flex justify-content-center text-center align-self-center">
+                <h1 class="container d-flex "> <img src="{% static '/apropos/a_propos.png'  %}" alt="a propos" class="img-fluid"/></h1>
               </div>
               
               <div class="container d-flex justify-content-center text-center text-sc">
-                <p>SnapCycle est un regroupement de jeunes étudiants de diverse universités et travailleurs du canada qui on voulu apporter leur empreintes dans la preservation de l'environnmement, en luttant contre l'utilisation du plastique untique, la pollution marine et les mauvaises pratiques dans le cadre du recyclage.</p>  
+                SnapCycle est un regroupement de jeunes étudiants de diverse universités et travailleurs du canada qui on voulu apporter leur empreintes dans la preservation de l'environnmement, en luttant contre l'utilisation du plastique untique, la pollution marine et les mauvaises pratiques dans le cadre du recyclage. 
               </div>
               <div class="container d-flex justify-content-center text-center text-sc">
-                <p>En ce sens est néee SnapCycle un projet vert qui visera à doter aux citoyens un outil qui leurs permettront en plus de savoir Qu'est ce qui est recyclabe ou pas à partir d'une photo de l'objet, l'application proposera en plus des alternatives de consommation écoresponsables et bien d'autres outils.</p>  
+                En ce sens est néee SnapCycle un projet vert qui visera à doter aux citoyens un outil qui leurs permettront en plus de savoir Qu'est ce qui est recyclabe ou pas à partir d'une photo de l'objet, l'application proposera en plus des alternatives de consommation écoresponsables et bien d'autres outils.
               </div>
-            
-          </td>
-        </tr>
-      </tbody>
-    </table>
-
-  </div>
-
-    </body>
-    <!-- Footer -->
+              
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      
+    </div>
     
-    <!-- Bootstrap JS -->
-    <!-- <script src="{%  static  'js/bootstrap.bundle.js'  %}" async defer></script> -->
-    <script src="{% static '/js/index.js' %}"></script> 
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-  <style>
-      .borders {
-    border-width:10px !important;
-    width:30vh;
-    height:30vh;
-    }
-
-  </style>
   </body>
+  <!-- Footer -->
+  
+  <!-- Bootstrap JS -->
+  <!-- <script src="{%  static  'js/bootstrap.bundle.js'  %}" async defer></script> -->
+  <script src="{% static '/js/index.js' %}"></script> 
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <style>
+    .borders {
+      border-width:10px !important;
+      width:30vh;
+      height:30vh;
+      box-sizing: unset;
+      flex:none;
+      margin: 1vh;
+      
+      
+    }
+  @media (max-width: 950px) { 
+    .borders{ padding:unset;} ;
+}
+
+
+
+
+@media (min-width: 950px) and (max-width:1100px) { 
+    .contact-b {justify-content: space-between;} ;
+}
+
+ @media (max-width: 950px) { 
+      .contact-b {justify-content: center !important;} ;
+    
+  </style>
+</body>
 </html>
 
 

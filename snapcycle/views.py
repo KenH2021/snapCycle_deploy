@@ -23,6 +23,14 @@ def contact(request):
 def mission(request):
     return render(request, 'pages/mission.html')
 
+def spool(request):
+    return render(request, 'pages/spool.html')
+
+def carbo(request):
+    return render(request, 'pages/carbo.html')
+
+def cameraIA(request):
+    return render(request, 'pages/cameraIA.html')
 
 def thanks(request):
     return render(request, 'pages/thanks.html')
