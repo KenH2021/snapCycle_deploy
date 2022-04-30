@@ -31,15 +31,22 @@
   font-size: 20;
   font-family: "Kollektif", "Times New Roman", sans-serif;
 }
-
+.m-title{
+  font-size: 3em;
+  margin: 0.5em 0 0.5em 0;
+}
 .mission-title {
   font-size: 10em;
   text-shadow: 0px 4px 5px rgba(207,207,207,0.72);
   letter-spacing: 5px;
-
   color:white;
   font-family: "Sacramento-Regular", "Times New Roman", sans-serif;
 }
+@media (max-width: 544px) {  
+  .mission-title {font-size:5em;} 
+}
+
+
 h3 {
   font-size: 50px;
   letter-spacing: 4px;
@@ -64,16 +71,29 @@ h3 {
   font-family: "Poppins-Regular", "Times New Roman", sans-serif;
   border:solid white 10px !important;
   letter-spacing: 0.1em;
-  margin-left: 3em;
-  margin-right: 3em;
+  margin-left: 4em;
+  margin-right: 4em;
   position: relative;
 }
+.bar{
+  border: 3px solid #005a70;
+  width:30%;
+  margin-top: 1em;;
+  margin-left: auto;
+  margin-right:auto;
+  margin-bottom:1em;
+  border-radius: 1em;
+}
+.mission-text{
+  font-size:1.3em;} 
+
+
 
 .spool-text{
   font-size: 2em;
   color: #58d6d7;
   line-height: 2em;
-  letter-spacing: 0.2em !important;
+  letter-spacing: 3px !important;
   font-family: "Poppins-Regular", "Times New Roman", sans-serif;
 
 }
@@ -124,7 +144,7 @@ a:active {
 }
 
 .text-contact {
-  font-size: 10;
+  font-size: 1em;
   color: white;
   font-family: "Poppins-Regular", "Times New Roman", sans-serif;
   
