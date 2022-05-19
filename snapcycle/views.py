@@ -8,8 +8,8 @@ from django.http import HttpResponse
 # Create your views here.
 
 
-def acceuil(request):
-    return render(request, 'pages/acceuil.html')
+def accueil(request):
+    return render(request, 'pages/accueil.html')
 
 
 def propos(request):
