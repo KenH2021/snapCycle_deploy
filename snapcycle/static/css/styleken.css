@@ -1,0 +1,36 @@
+.transition-fade {
+  opacity: 1;
+  transform: translateX(0%);
+  transform-origin: left;
+  transition: 500ms;
+}
+
+html.is-animating .transition-fade {
+  transform: translateX(100%);
+  opacity: 0;
+
+}
+
+html.is-leaving .transition-fade {
+  transform: translateX(0);
+  opacity: 1;
+}
+
+
+.transition-down {
+  opacity: 1;
+  transition: 400ms;
+  transform: translateY(0%);
+  transform-origin: top;
+}
+
+html.is-animating .transition-down {
+  transform: translateY(100%);
+  opacity: 0;
+
+}
+
+html.is-leaving .transition-down {
+  transform: translateY(0);
+  opacity: 1;
+}

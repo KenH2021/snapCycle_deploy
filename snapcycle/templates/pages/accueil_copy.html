@@ -1,0 +1,153 @@
+{% load static %} 
+
+
+<style type="text/css">
+  html, .contact, .a-propos { 
+    background: url('{% static "accueil/BackGround_low.png" %}') no-repeat center center; 
+    height: 130%;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    
+  }
+  body{
+    background-color: transparent!important;
+  }
+  .navbar-nav{
+  text-align: right;
+  }
+  .navbar{
+    margin:unset !important;
+  }
+  
+</style>
+
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css">
+    <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width  maximum-scale=1.0  user-scalable=0;">
+  
+  <!-- Swup -->
+  <script src="https://unpkg.com/swup@latest/dist/swup.min.js"></script> 
+  <link rel="stylesheet" href="{% static '/css/styleken.css'  %}">
+
+  <!-- Bootstrap CSS -->
+  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+  <link rel="stylesheet" href="{% static '/css/transitions.css'  %}">
+  <link rel="stylesheet" href="{% static '/css/style.css'  %}">
+  
+  
+  
+  
+  
+  <title>SnapCycle</title>
+</head >
+<!-- NAV BAR  -->
+{% include "navbar.html" %}
+<main id="swup" class="transition-fade">
+<body >
+
+  
+  
+
+        <table class="flex-fill row  h-50" >
+        <tbody class='col align-self-center'>
+          <tr class='d-flex flex-column'>
+            <td class="align-middle ">
+              <div class="d-flex justify-content-center text-center align-self-baseline">
+                <img src="{% static '/accueil/message.png'  %}" class="img-fluid" alt="Notre site web reviens bientot avec un nouveaux concept
+                " />
+                
+              </div>
+              <div class="d-flex justify-content-center text-center">
+                <h1> <img src="{% static '/accueil/loading.png'  %}" class="img-fluid" alt="loading"/> </h1>
+              </div>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      
+      
+      
+      
+      <!-- Footer -->
+      <footer class="page-footer mt-auto row h-20" >
+        
+        <div class="container-fluid" >
+          <div class=" flex-nowrap d-flex justify-content-between">
+            <div class="d-flex flex-row" style="max-height:209px;">
+              <picture class="d-flex">
+                <img  src="{% static '/accueil/personnage.png' %}"  class="img-fluid" alt="personnage"/>
+              </picture>
+              <a class="p-4 mt-auto beta" href="/beta"> <div>Version Beta Snapcyle </div> </a>
+              
+            </div>
+            
+            <div class="d-flex flex-row">
+              <h5 class="p-4 mb-0 mt-auto "> 
+                <picture class="d-flex">
+                  <img  src="{% static '/accueil/icon-feather-linkedin.png' %}" class="img-fluid" alt="linkedin"/> 
+                </picture>
+              </h5>
+              <h5 class="p-4 mb-0 mt-auto ">
+                <picture class="d-flex">  <img  src="{% static '/accueil/icon-awesome-instagram.png' %}" class="img-fluid" alt="instagram"/> 
+                </picture>
+              </h5>
+              <h5 class="p-4 mb-0 mt-auto "> 
+                <picture class="d-flex"> 
+                  <img src="{% static '/accueil/icon-awesome-facebook-square.png' %}" class="img-fluid" alt="facebook"/>
+                </picture>
+              </h5>
+            </div>
+          </div>`
+        </div>
+      </footer>
+    </div>
+    
+    
+    
+  </body>
+</main>
+  <!-- Footer -->
+  
+  <!-- Bootstrap JS -->
+  <!-- <script src="{%  static  'js/bootstrap.bundle.js'  %}" async defer></script> -->
+  <script src="{% static '/js/index.js' %}"></script> 
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <style>
+    .borders {
+      border-width:10px !important;
+      width:30vh;
+      height:30vh;
+      box-sizing: unset;
+      flex:none;
+      margin: 1vh;
+      
+      
+    }
+  @media (max-width: 950px) { 
+    .borders{ padding:unset;} ;
+}
+
+
+
+
+@media (min-width: 950px) and (max-width:1100px) { 
+    .contact-b {justify-content: space-between;} ;
+}
+
+ @media (max-width: 950px) { 
+      .contact-b {justify-content: center !important;} ;
+    
+  </style>
+</html>
+
+
